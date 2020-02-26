@@ -1,3 +1,6 @@
+//@import 'font-awesome-sprockets';
+//@import 'font-awesome';
+
 body{
 background:#708090;
 padding-left:210px;
@@ -31,7 +34,7 @@ h3{
   text-align:center;
     
 }
-.sidenav {
+div.sidenav {
  height: 100%; 
   width: 200px; 
   position: fixed; 
@@ -40,7 +43,8 @@ h3{
   left: 0;
   background-color: #111; 
   overflow-x: hidden; 
-   text-align: center
+  padding-top: 20px;
+  text-align: center
 }
 
 button {
@@ -63,6 +67,7 @@ input[type="password"]{
 
 img {
   width:190px;
+  border:15px;
   border-radius:12px;
   border-color: red
   }
@@ -76,7 +81,7 @@ ul {
   text-align: center;
 }
 
-li {
+li {float: left;
 text-align: center;
 width:200px;
 color:white;
@@ -95,7 +100,7 @@ li a:hover {
   color: inherit;
   }
 
-.active {
+li a.active {
   background-color: blue;
   color: white;
   width:200px;
@@ -113,20 +118,25 @@ a {
 .boxes {
   width: 1000px;
   height:190px;
-  text-align: center;
+  padding-top:20px;
+  padding-left:15px;
+  padding-right:15px;
+  text-align: center
   }
 
 #leftbox{
   float:left;
   width:300px;
   height:300px;
-   text-align: center;
+  border: solid black;
+  text-align: center
 
 }
 #middlebox{
   float:left;
   width:300px;
   height:300px;
+  border: solid black;
   margin-left: 50px;
   margin-right:10px;
   text-align: center;
@@ -136,6 +146,7 @@ a {
   float:right;
   width:300px;
   height:300px;
-    text-align:center
+  border: solid black;
+  text-align:center
 
 }
