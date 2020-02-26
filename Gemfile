@@ -14,7 +14,7 @@ gem 'uglifier', '3.0.0'
 gem 'coffee-rails', '4.2.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'font-awesome-sass', '~> 4.6.2'
+gem 'font-awesome-sass', '4.6.2'
 #font Awesome Repository
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '4.1.1'
@@ -29,6 +29,8 @@ gem 'jbuilder', '2.5.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#use twitter bootstrap library for front end ui
+gem 'bootstrap-sass', '3.3.7'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

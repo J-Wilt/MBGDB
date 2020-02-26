@@ -1,9 +1,13 @@
-//@import 'font-awesome-sprockets';
-//@import 'font-awesome';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+
+  
 
 body{
 background:#708090;
-padding-left:210px;
 font-family: 'Trade Winds'
 }
 
@@ -34,9 +38,9 @@ h3{
   text-align:center;
     
 }
-div.sidenav {
+.sidenav  {
  height: 100%; 
-  width: 200px; 
+  width: 0; 
   position: fixed; 
   z-index: 1; 
   top: 0; 
@@ -45,6 +49,19 @@ div.sidenav {
   overflow-x: hidden; 
   padding-top: 20px;
   text-align: center
+}
+
+.sidenav .closebth{
+  position: absolute;
+  top:0;
+  right:25px;
+  font-size: 36px;
+  }
+
+#main {
+  transition:margin-left .5s;
+  padding: 16px;
+  margin-left:0;
 }
 
 button {
@@ -83,7 +100,7 @@ ul {
 
 li {float: left;
 text-align: center;
-width:200px;
+width:300px;
 color:white;
 display:inline-block;}
 
@@ -149,4 +166,10 @@ a {
   border: solid black;
   text-align:center
 
+}
+
+.wrapper{
+  display:flex;
+  width:100%;
+  align-items:stretch;
 }

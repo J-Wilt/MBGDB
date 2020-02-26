@@ -7,28 +7,53 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
-  <body>
-      <div class = "sidenav"></i>
-      <img class ="game" src="https://mbgdb.s3.us-east-2.amazonaws.com/blur-board-game-business-challenge-278918.jpg" alt="This will be deleted">
-        <form>
-          <label for="UserName">MBGDB ID</label>
-          <input type = "text" placeholder="Enter MBGDB User Name"><br>
-          <label for='password'>Password</label>
-          <input type = "password" placeholder="Enter Password"><br><br>
-          <input type = "submit" id="formsubmit" name="formsubmit">
-          <button type="button">Join For Free!</button>
-      </form> 
-      <br><br>
-      <ul>
-                    <li><%= link_to "Home", "/" %></li>
-          <li><a href=page3.asp>Your Collection</a></li>
-          <li><a href=page4.asp>Discover New Games</a></li>
-          <li><a href=page5.asp>The Gamer Blog</a></li>
-          <li><%= link_to "About", "/about" %></li>
-
-      </ul>
-    </div class ="sidenav">
-    <%= yield %>
-  </body>
+  
+  <div class= "container">
+    <body>
+        <div id=mySidenav class = "sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide Menu &times;</a>
+            <br>
+            <br>
+              <img class ="game" src="https://mbgdb.s3.us-east-2.amazonaws.com/blur-board-game-business-challenge-278918.jpg" alt="This will be deleted">
+              <form>
+                <label for="UserName">MBGDB ID</label>
+                <input type = "text" placeholder="Enter MBGDB User Name"><br>
+                <label for='password'>Password</label>
+                <input type = "password" placeholder="Enter Password"><br><br>
+                <input type = "submit" id="formsubmit" name="formsubmit">
+                <button type="button">Join For Free!</button>
+              </form> 
+                <br><br>
+              <ul>
+                  <li><%= link_to "Home", root_path %></li>
+                  <li><a href=page3.asp>Your Collection</a></li>
+                  <li><a href=page4.asp>Discover New Games</a></li>
+                  <li><a href=page5.asp>The Gamer Blog</a></li>
+                  <li><%= link_to "About", about_path %></li>
+              </ul>
+          </div>  
+    <div id = main>
+               <header>
+                 <span id="menu_label" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu & Login</span> 
+                 
+                 <h1>My Board Game Database</h1>
+               </header>
+                       
+              <script>
+                function openNav() {
+                  document.getElementById("mySidenav").style.width = "300px";
+                  document.getElementById("main").style.marginLeft = "300px";
+                  document.getElementById("menu_label").style.visibility = "hidden";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav").style.width = "0";
+                  document.getElementById("main").style.marginLeft= "0";
+                  document.getElementById("menu_label").style.visibility = "visible";
+                }
+                </script>
+          <%= yield %>
+    </div id = main>
+   </body>
+  </div>
 </html>
