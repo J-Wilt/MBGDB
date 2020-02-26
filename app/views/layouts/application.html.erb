@@ -9,6 +9,26 @@
   </head>
 
   <body>
+      <div class = "sidenav">
+      <img class ="game" src="https://mbgdb.s3.us-east-2.amazonaws.com/blur-board-game-business-challenge-278918.jpg" alt="This will be deleted">
+      <form>
+          <label for="UserName">MBGDB ID</label>
+          <input type = "text" placeholder="Enter MBGDB User Name"><br>
+          <label for='password'>Password</label>
+          <input type = "password" placeholder="Enter Password"><br><br>
+          <input type = "submit" id="formsubmit" name="formsubmit">
+          <button type="button">Join For Free!</button>
+      </form> 
+      <br><br>
+      <ul>
+          <li><a href=root>Home</a></li>
+          <li><a href=page3.asp>Your Collection</a></li>
+          <li><a href=page4.asp>Discover New Games</a></li>
+          <li><a href=page5.asp>The Gamer Blog</a></li>
+          <li><a href=about>About Us</a></li>
+
+      </ul>
+    </div class ="sidenav">
     <%= yield %>
   </body>
 </html>
