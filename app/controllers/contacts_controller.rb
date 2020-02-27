@@ -9,12 +9,12 @@ class ContactsController < ApplicationController
             name = params [:contact][:name]
             email = params [:contact][:comments]
             body = params [:contact][:comments]
-            ContactMailer.contact_eamil(name, email, body).deliver
+            ContactMailer.contact_email(name, email, body).deliver
             flash[:success] = "Thank you for contacting us. We will reply as soon as we can."
             redirect_to root_path
         else 
             flash[:danger] = @contact.errors.full_messages.join(", ")
-            redirect_to new_contact_path
+            redirect_to contact_us_path
         end 
     end 
 

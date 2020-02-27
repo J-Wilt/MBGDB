@@ -12,7 +12,7 @@ font-family: 'Trade Winds'
 }
 
 header{
-  height:150px;
+  height:50px;
   border-radius:12px;
   box-shadow: 4px 4px gray;
   margin: 0 auto;
@@ -20,9 +20,8 @@ header{
 h1{
   font-family: 'Trade Winds';
   font-weight: bold;
-  text-align: center;
-  font-size: 50px;
-  font-stretch: extra-expanded;
+  text-align: right;
+  font-size: 25px;
   
 }
 
@@ -74,12 +73,12 @@ input[type="submit"]{
 
 input[type="text"]{
   border-radius:12px;
-  text-align: center
-}
+  text-align: center;
+ }
 
 input[type="password"]{
   border-radius:12px;
-  text-align: center
+  text-align: center;
 }
 
 img {
@@ -96,11 +95,12 @@ ul {
   overflow:hidden;
   background-color: #333;
   text-align: center;
+  width:250px;
 }
 
 li {float: left;
 text-align: center;
-width:300px;
+width:250px;
 color:white;
 display:inline-block;}
 
