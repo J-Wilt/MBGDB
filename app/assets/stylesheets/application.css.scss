@@ -32,7 +32,7 @@ h2{font-family: 'Trade Winds',Charcoal,sans-serif;
 
 }
 h3{
-  font-family: "Arial Black",Gadget,sans-serif;
+  font-family: "Trade Winds",sans-serif;
   padding-top: 0px;
   text-align:center;
     
@@ -50,14 +50,6 @@ h3{
   text-align: center
 }
 
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
 
 .sidenav .closebth{
   position: absolute;
@@ -108,26 +100,29 @@ ul {
   width:250px;
 }
 
-li {float: left;
+.sidenav li {float: left;
 text-align: center;
 width:250px;
 color:white;
 display:inline-block;}
 
-li a {
-  display: block;
-  text-align:center;
-  padding: 14px 16px;
-  background-color: #333;
-  text-decoration:none;
-}
 
-li a:hover {
+
+.sidenav a {
+  padding: 8px 8px 8px 0;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align:center;
+}
+.sidenav a:hover {
   background-color: green;
   color: inherit;
   }
 
-li a.active {
+.sidenav a.active {
   background-color: blue;
   color: white;
   width:200px;
@@ -148,35 +143,18 @@ a {
   padding-top:20px;
   padding-left:15px;
   padding-right:15px;
+  margin: 15px;
   text-align: center
   }
 
-#leftbox{
+#spotbox{
   float:left;
-  width:300px;
-  height:300px;
+  width:320px;
+  height:400px;
   border: solid black;
-  text-align: center
-
-}
-#middlebox{
-  float:left;
-  width:300px;
-  height:300px;
-  border: solid black;
-  margin-left: 50px;
-  margin-right:10px;
   text-align: center;
-}
+ }
 
-#rightbox{
-  float:right;
-  width:300px;
-  height:300px;
-  border: solid black;
-  text-align:center
-
-}
 
 .wrapper{
   display:flex;
