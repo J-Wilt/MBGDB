@@ -53,6 +53,11 @@
                   document.getElementById("menu_label").style.visibility = "visible";
                 }
                 </script>
+          <div class="container">    
+            <% flash.each do |type, msg| %>
+            <%= content_tag :div, msg, class: "alert-#{type} text-center" %>
+            <% end %>    
+          </div>
           <%= yield %>
     </div id = main>
    </body>
