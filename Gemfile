@@ -26,6 +26,8 @@ gem 'jbuilder', '2.5.0'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
+#use HIRB Gem for better console data presentation
+gem 'hirb', '0.7.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
