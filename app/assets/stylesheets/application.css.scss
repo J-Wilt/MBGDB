@@ -95,6 +95,17 @@ input[type="password"]{
   text-align: center;
 }
 
+
+input[type="email"]{
+  border-radius:12px;
+  text-align: center;
+}
+
+
+#logo{
+  
+}
+
 img {
   width:190px;
   border:15px;
@@ -109,12 +120,12 @@ ul {
   overflow:hidden;
   background-color: #333;
   text-align: center;
-  width:250px;
+  width:300px;
 }
 
 .sidenav li {float: left;
 text-align: center;
-width:250px;
+width:300px;
 color:white;
 display:inline-block;}
 
@@ -137,7 +148,7 @@ display:inline-block;}
 .sidenav a.active {
   background-color: blue;
   color: white;
-  width:200px;
+  width:300px;
   text-align:center;
 }
 

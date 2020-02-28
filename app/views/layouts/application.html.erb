@@ -17,14 +17,19 @@
             <br>
             <br>
               <img id ="logo" src="https://mbgdb.s3.us-east-2.amazonaws.com/LogoMakr_95QFB2.png" alt="This will be deleted">
-              <form>
-                <input type = "text" placeholder="Enter MBGDB ID"><br>
-                <input type = "password" placeholder="Enter Password"><br><br>
-                <input type = "submit" value="Sign In" id="formsubmit" name="formsubmit">
-                <button type="button">Join For Free!</button>
-              </form> 
-                <br>
-              <ul>
+                 <% if user_signed_in? %> 
+                  <%= link_to('Logout', destroy_user_session_path, method: :delete) %>        
+                     <% else %>
+                  <%= form_for(:user, :url => session_path(:user)) do |f| %>
+                      <%= f.text_field :email, autofocus: true, placeholder: 'Enter Email' %>
+                      <%= f.password_field :password, placeholder: 'Enter Password' %><br>
+                      <%= f.check_box :remember_me %>
+                      <%= f.label :remember_me %>
+                      <%= f.submit 'Sign in' %>
+                      <%= link_to "Forgot your password?", new_password_path(:user) %>
+                  <% end %>
+                  <% end %>
+              <ul> 
                   <li><%= link_to "Home", root_path %></li>
                   <li><a href=page3.asp>Your Collection</a></li>
                   <li><a href=page4.asp>Discover New Games</a></li>
@@ -57,8 +62,8 @@
     </div>
     <script>
                 function openNav() {
-                  document.getElementById("mySidenav").style.width = "250px";
-                  document.getElementById("main").style.marginLeft = "250px";
+                  document.getElementById("mySidenav").style.width = "300px";
+                  document.getElementById("main").style.marginLeft = "300px";
                   document.getElementById("menu_label").style.visibility = "hidden";
                   document.getElementById("mySidenav").style.overflowX="auto";
                   
