@@ -30,7 +30,7 @@ gem 'jbuilder', '2.5.0'
 gem 'hirb', '0.7.3'
 
 #use Devise for user authentication
-gem 'devise', '4.2.0'
+gem 'devise', '4.4.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
