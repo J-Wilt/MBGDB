@@ -12,7 +12,7 @@ font-family: 'Trade Winds'
 }
 
 header{
-  height:50px;
+  height:145px;
   border-radius:12px;
   box-shadow: 4px 4px gray;
   margin: 0 auto;
@@ -52,7 +52,7 @@ p{
 
 .sidenav  {
  height: 100%; 
-  width: 0; 
+  width: 300px; 
   position: fixed; 
   z-index: 1; 
   top: 0; 
@@ -107,8 +107,8 @@ input[type="email"]{
 }
 
 
-#logo{
-  
+#logo_top{
+  position: right;
 }
 
 img {
@@ -216,3 +216,6 @@ a {
   text-align: center;
   background: #337ab7;
 }
+
+#menu_label {
+  display: none}
