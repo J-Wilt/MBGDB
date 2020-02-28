@@ -7,7 +7,7 @@
   
 
 body{
-background: #4f6d7a;
+background: #FFF8DC;
 font-family: 'Trade Winds'
 }
 
@@ -16,7 +16,7 @@ header{
   border-radius:12px;
   box-shadow: 4px 4px gray;
   margin: 0 auto;
-  background: #73a580;
+  background: #4f6d7a;
 }
 h1{
   font-family: 'Trade Winds';
@@ -56,7 +56,7 @@ p{
   z-index: 1; 
   top: 0; 
   left: 0;
-  background-color: #111,.5;
+  background-color: #4f6d7a;
   overflow-x: hidden; 
   padding-top: 20px;
   text-align: center
@@ -124,7 +124,7 @@ display:inline-block;}
   padding: 8px 8px 8px 0;
   text-decoration: none;
   font-size: 15px;
-  color: #818181;
+  color: #FFF8DCs;
   display: block;
   transition: 0.3s;
   text-align:center;
@@ -156,6 +156,8 @@ a {
   border: solid black;
   text-align: center;
   margin: 3px;
+  background: #fada5e;
+  border-radius:12px
  }
 
 
