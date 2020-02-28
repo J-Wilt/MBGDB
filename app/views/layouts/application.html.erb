@@ -55,10 +55,11 @@
                </header>
                        
              
-          <div class="container">    
-            <% flash.each do |type, msg| %>
-            <%= content_tag :div, msg, class: "alert-#{type} text-center" %>
-            <% end %>    
+                <div class="container flash-container">    
+                  <% flash.each do |type, msg| %>
+                  <%= content_tag :div, msg, class: "alert-#{type} text-center" %>
+                  <% end %>
+                </div>
          
           <%= yield %>
     </div id = main>

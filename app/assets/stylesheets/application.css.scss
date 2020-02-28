@@ -16,7 +16,8 @@ header{
   border-radius:12px;
   box-shadow: 4px 4px gray;
   margin: 0 auto;
-  background: #4f6d7a;
+  background: rgb(147,147,163);
+  background: radial-gradient(circle, rgba(147,147,163,1) 50%, rgba(10,10,10,0.25580654625131305) 100%);
 }
 h1{
   font-family: 'Trade Winds';
@@ -56,7 +57,8 @@ p{
   z-index: 1; 
   top: 0; 
   left: 0;
-  background-color: #4f6d7a;
+  background: rgb(147,147,163);
+  background: radial-gradient(circle, rgba(147,147,163,1) 50%, rgba(10,10,10,0.25580654625131305) 100%);
   overflow-x: hidden; 
   padding-top: 20px;
   text-align: center
@@ -88,17 +90,20 @@ input[type="submit"]{
 input[type="text"]{
   border-radius:12px;
   text-align: center;
+  width: 100%;
  }
 
 input[type="password"]{
   border-radius:12px;
   text-align: center;
+  width: 100%;
 }
 
 
 input[type="email"]{
   border-radius:12px;
   text-align: center;
+  width: 100%;
 }
 
 
@@ -120,7 +125,9 @@ ul {
   overflow:hidden;
   background-color: #333;
   text-align: center;
-  width:300px;
+  width:100%;
+  color: white;
+  
 }
 
 .sidenav li {float: left;
@@ -183,3 +190,29 @@ a {
   .sidenav a {font-size: 18px;}
 }
 
+.alert-notice, .alert-alert {
+  text-align: center;
+  background-color: rgba(255,255,225,0.3);
+  border-color: rgba(255,255,225,0.3);
+  
+}
+
+.flash-container {
+  position: absolute;
+  width: 100%;
+}
+
+.error_explaination ul {
+  background-color: rgba(255,255,225,0.3);
+  color: white;
+}
+
+.well {
+  padding: 15px;
+}
+
+.SharedLinks{
+  color:blue;
+  text-align: center;
+  background: #337ab7;
+}
