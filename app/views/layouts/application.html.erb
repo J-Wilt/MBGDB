@@ -44,19 +44,21 @@
         </div>  
                 <div class= "container-fluid"> 
                   <div id = main>
-                       <header id="menu_label" >
-                             <div class= "row">
-                                 <div class="col-md-4">
-                                   <br><br><br>
-                                   <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu & Login</span> 
-                                 </div>
-                                 <div class="col-md-2 col-md-offset-6">
-                                  <img id ="logo-top" src="https://mbgdb.s3.us-east-2.amazonaws.com/LogoMakr_95QFB2.png" alt="MYBGDB Logo">
-                                </div>
-                              </div>
-                         </header>
-                       </div>
-                      </div>
+                   <div class="well header"
+                      <header id="menu_label" >
+                        <div class= "row">
+                          <div class="col-md-4">
+                                     <br><br><br>
+                          <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu & Login</span> 
+                          </div>
+                          <div class="col-md-2 col-md-offset-6">
+                            <img id ="logo-top" src="https://mbgdb.s3.us-east-2.amazonaws.com/LogoMakr_95QFB2.png" alt="MYBGDB Logo">
+                          </div>
+                        </div>
+                      </header>
+                    </div>  
+                  </div>
+                </div>
              
                 <div class="container flash-container">    
                   <% flash.each do |type, msg| %>
@@ -65,21 +67,23 @@
                 </div>
          
           <%= yield %>
+      </div>
     </div id = main>
-    </div>
     <script>
                 function openNav() {
+                  
                   document.getElementById("mySidenav").style.width = "300px";
-                  document.getElementById("main").style.marginLeft = "300px";
                   document.getElementById("menu_label").style.display = "none";
                   document.getElementById("mySidenav").style.overflowX="auto";
-                  
+                  document.getElementsByClassName("main")[0].style.marginLeft = '325px'; 
                 }
                 
                 function closeNav() {
+                  document.getElementsByClassName("main")[0].style.marginLeft = "0px";
                   document.getElementById("mySidenav").style.width = "0";
-                  document.getElementById("main").style.marginLeft= "0";
                   document.getElementById("menu_label").style.display = "block";
+                  
+                  
                 }
                 </script> 
         </body>

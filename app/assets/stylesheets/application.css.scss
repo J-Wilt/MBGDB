@@ -19,6 +19,7 @@ header{
   background: rgb(147,147,163);
   background: radial-gradient(circle, rgba(147,147,163,1) 50%, rgba(10,10,10,0.25580654625131305) 100%);
 }
+
 h1{
   font-family: 'Trade Winds';
   font-weight: bold;
@@ -73,10 +74,9 @@ p{
   color:red;
   }
 
-#main {
+.main {
   transition:margin-left .5s;
-  padding: 16px;
-  margin-left:0;
+  margin-left: 325px;
 }
 
 button {
@@ -109,6 +109,7 @@ input[type="email"]{
 
 #logo_top{
   position: right;
+
 }
 
 img {
@@ -208,7 +209,17 @@ a {
 }
 
 .well {
-  padding: 15px;
+  padding-top: 10px;
+}
+
+.well header{
+  padding-top: 10px;
+  height:145px;
+  border-radius:12px;
+  box-shadow: 4px 4px gray;
+  margin: 0 auto;
+  background: rgb(147,147,163);
+  background: radial-gradient(circle, rgba(147,147,163,1) 50%, rgba(10,10,10,0.25580654625131305) 100%);
 }
 
 .SharedLinks{
