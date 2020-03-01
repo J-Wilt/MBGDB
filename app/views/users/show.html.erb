@@ -2,8 +2,9 @@
   <div class ="main">
     <div class ="well">
       <div class ="text-center">  
+      <%= image_tag @user.profile.avatar.url%>
        <H1> <%= @user.profile.first_name %> <%= @user.profile.last_name %> </H1><br>
-       <p>Location:  <%= @user.profile.city %>, <%= @user.profile.state %>  <%= @user.profile.zip %></p><br>
+        <p>Location:  <%= @user.profile.city %>, <%= @user.profile.state %>  <%= @user.profile.zip %></p><br>
          <p>Email: <%= @user.profile.contact_email %></p>
        <p> About: <%= @user.profile.description %></p>
       </div>
