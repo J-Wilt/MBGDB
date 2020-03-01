@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class ="main">
+    <div class ="well">
+      <div class ="text-center">  
+       <H1> <%= @user.profile.first_name %> <%= @user.profile.last_name %> </H1><br>
+       <p>Location:  <%= @user.profile.city %>, <%= @user.profile.state %>  <%= @user.profile.zip %></p><br>
+         <p>Email: <%= @user.profile.contact_email %></p>
+       <p> About: <%= @user.profile.description %></p>
+      </div>
+    </div>  
+  </div>
+</div>
