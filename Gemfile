@@ -37,6 +37,8 @@ gem 'devise', '4.4.0'
 #use twitter bootstrap library for front end ui
 gem 'bootstrap-sass', '3.3.7'
 
+#use paperclip for images
+gem 'paperclip', '4.3.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
