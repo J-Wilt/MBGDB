@@ -34,15 +34,26 @@
                   
               <ul> 
                   <li><%= link_to "Home", root_path %></li>
-                  <li><a href=page3.asp>Your Collection</a></li>
                   <li><a href=page4.asp>Discover New Games</a></li>
                   <li><a href=page5.asp>The Gamer Blog</a></li>
                   <li><%= link_to "Contact Us", contact_us_path %></li>
                   <li><%= link_to "About", about_path %></li>
-                  <li><%= link_to "Create your profile!", new_user_profile_path(user_id: current_user.id) if user_signed_in? %></li>
                   
-                  
-              </ul>
+                  <% if user_signed_in? %>
+                    <% if current_user.profile %>
+                      <li> <%= link_to "View your Collection", user_path(current_user.id) %></li>
+                       <li> <%= link_to "Edit your Profile", "#" %> </li>
+                      
+                       
+                     <% else %>
+                      <li><%= link_to "Create your profile to begin", new_user_profile_path(user_id: current_user.id) %></li>
+                     <% end %>
+                    
+                  <% end %>
+               </ul>   
+
+                
+              
           </div>
         </div>  
                 <div class= "container-fluid"> 
