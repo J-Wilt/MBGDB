@@ -16,7 +16,7 @@
             <b href="javascript:void(0)" class="closebtn" onclick="closeNav()">Hide Menu &times;</b>
             <br>
             <br>
-              <img id ="logo" src="https://mbgdb.s3.us-east-2.amazonaws.com/LogoMakr_95QFB2.png" alt="MYBGDB Logo">
+              <img class ="logo" src="https://mbgdb.s3.us-east-2.amazonaws.com/LogoMakr_95QFB2.png" alt="MYBGDB Logo">
                  <% if user_signed_in? %> 
                   <%= link_to('Logout', destroy_user_session_path, method: :delete, class:"btn btn-primary") %>        
                      <% else %>
@@ -32,32 +32,36 @@
                   <% end %>
                   <br>
                   
-              <ul> 
-                  <li><%= link_to "Home", root_path %></li>
-                  <li><a href=page4.asp>Discover New Games</a></li>
-                  <li><a href=page5.asp>The Gamer Blog</a></li>
-                  <li><%= link_to "Contact Us", contact_us_path %></li>
-                  <li><%= link_to "About", about_path %></li>
-                  
+              <ul class= "user_links"> 
                   <% if user_signed_in? %>
                     <% if current_user.profile %>
-                      <li> <%= link_to "View your Collection", user_path(current_user.id) %></li>
-                       <li> <%= link_to "Edit your Profile", "#" %> </li>
+                      <li> <%= link_to "View your Collection", user_path(id: current_user.id) %></li>
+                       <li> <%= link_to "Edit your Profile",  edit_user_profile_path(user_id: current_user.id) %> </li>
                       
                        
                      <% else %>
                       <li><%= link_to "Create your profile to begin", new_user_profile_path(user_id: current_user.id) %></li>
+                     <% end %> 
                      <% end %>
-                    
-                  <% end %>
-               </ul>   
+                  
+                  </ul>
+              <br>
+              <ul>
+                  <li><a href=page4.asp>Discover New Games</a></li>
+                  <li><%= link_to "Home", root_path %></li>
+                  <li><%= link_to "Contact Us", contact_us_path %></li>
+                  <li><%= link_to "About Us", about_path %></li>
+              </ul>    
+                  
+                 
+              
 
                 
               
           </div>
         </div>  
                 <div class= "container-fluid"> 
-                  <div id = main>
+                  <div class = main>
                    <div class="well header"
                       <header id="menu_label" >
                         <div class= "row">
@@ -66,7 +70,7 @@
                           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu & Login</span> 
                           </div>
                           <div class="col-md-2 col-md-offset-6">
-                            <img id ="logo-top" src="https://mbgdb.s3.us-east-2.amazonaws.com/LogoMakr_95QFB2.png" alt="MYBGDB Logo">
+                            <img id ="logo_top" src="https://mbgdb.s3.us-east-2.amazonaws.com/LogoMakr_95QFB2.png" alt="MYBGDB Logo">
                           </div>
                         </div>
                       </header>

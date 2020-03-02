@@ -113,13 +113,40 @@ input[type="email"]{
   width: 100%;
 }
 
-
+.logo{
+  position: right;
+  width:190px;
+  border:15px;
+  border-radius:12px;
+  border-color: red
+  }
+  
+  .avatar_show_img{
+  width: 128px;
+  height: 128px;
+  border: 15px;
+  border-radius: 12px;
+  border-color: red;
+  }
+  
+  .game{
+  position: right;
+  width:190px;
+  border:15px;
+  border-radius:12px;
+  border-color: red
+  }
+  
+  .user-index-avatar {
+  width: 128px;
+  height: 128px;
+  border: 15px;
+  border-radius: 12px;
+  border-color: red;
+  }
+  
 #logo_top{
   position: right;
-
-}
-
-img {
   width:190px;
   border:15px;
   border-radius:12px;
@@ -237,3 +264,11 @@ a {
 
 #menu_label {
   display: none}
+  
+.white-bg{
+  background-color: silver;
+}
+
+.index_text{
+  color: black;
+}
