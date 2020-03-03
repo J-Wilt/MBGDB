@@ -35,9 +35,10 @@
               <ul class= "user_links"> 
                   <% if user_signed_in? %>
                     <% if current_user.profile %>
-                      <li> <%= link_to "View your Collection", user_path(id: current_user.id) %></li>
-                       <li> <%= link_to "Edit your Profile",  edit_user_profile_path(user_id: current_user.id) %> </li>
-                      
+                      <li> <%= link_to "View My Collection", user_path(id: current_user.id) %></li>
+                       <li> <%= link_to "Edit My Profile",  edit_user_profile_path(user_id: current_user.id) %> </li>
+                       <li> <%= link_to "Find Other Members", users_path %></li>
+                      <li> <%= link_to "Manage My Account", edit_user_registration_path %></li>
                        
                      <% else %>
                       <li><%= link_to "Create your profile to begin", new_user_profile_path(user_id: current_user.id) %></li>
