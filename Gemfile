@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '5.0.1'
 
 # Use Puma as the app server
-gem 'puma', '3.12.2'
+gem 'puma', '3.12.4'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.6'
 # Use Uglifier as compressor for JavaScript assets
@@ -30,15 +30,15 @@ gem 'jbuilder', '2.5.0'
 gem 'hirb', '0.7.3'
 
 #use Devise for user authentication
-gem 'devise', '4.4.0'
+gem 'devise', '4.7.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #use twitter bootstrap library for front end ui
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 
 #use paperclip for images
-gem 'paperclip', '4.3.6'
+gem 'paperclip', '5.2.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
