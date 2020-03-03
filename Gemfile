@@ -35,7 +35,7 @@ gem 'devise', '4.4.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #use twitter bootstrap library for front end ui
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass', '3.4.1'
 
 #use paperclip for images
 gem 'paperclip', '4.3.6'
